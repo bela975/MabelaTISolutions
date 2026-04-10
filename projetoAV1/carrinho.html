@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabela Serviços | Solicitação de serviços de TI</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/cadastro.js"></script>
+  <script defer src="js/carrinho.js"></script>
+  <script defer src="js/main.js"></script>
+  <style>
+    .cart-card {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .cart-card .summary-box {
+      background: linear-gradient(135deg, #eff6ff, #ffffff);
+    }
+  </style>
+</head>
+<body data-page="cart">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="branding">
+          <img class="logo" src="assets/logo.svg" alt="Logo da Mabela Serviços">
+          <div>
+            <h1>Solicitação de serviços de TI</h1>
+            <p class="slogan">Página única com seções para identificação do cliente, histórico e inclusão de novas solicitações.</p>
+          </div>
+        </div>
+        <nav class="nav-links" aria-label="Navegação secundária">
+          <a href="index.html">Apresentação</a>
+          <a href="login.html">Login</a>
+          <a href="cadastro.html">Cadastro</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-inner">
+      <section id="cartPage" class="card cart-card layout-stack">
+        <article class="summary-box">
+          <p class="kicker">Usuário logado</p>
+          <div class="meta-row">
+            <span><strong>Nome:</strong> <span id="loggedUserName">Cliente TI</span></span>
+            <span><strong>Login:</strong> <span id="loggedUserEmail">cliente@empresa.com</span></span>
+          </div>
+        </article>
+
+        <article>
+          <p class="kicker">Solicitações já realizadas</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Data do pedido</th>
+                  <th>Nº</th>
+                  <th>Serviço de TI</th>
+                  <th>Status</th>
+                  <th>Preço</th>
+                  <th>Data prevista</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+              <tbody id="requestsBody"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="page-grid">
+          <div class="card">
+            <p class="kicker">Nova solicitação</p>
+            <div class="form-grid">
+              <div class="field-group">
+                <label for="serviceSelect">Serviço de TI</label>
+                <select id="serviceSelect" name="serviceSelect"></select>
+              </div>
+
+              <div class="three-col">
+                <div class="field-group">
+                  <label>Preço</label>
+                  <output id="servicePrice"></output>
+                </div>
+                <div class="field-group">
+                  <label>Prazo de atendimento</label>
+                  <output id="serviceTime"></output>
+                </div>
+                <div class="field-group">
+                  <label>Data prevista de atendimento</label>
+                  <output id="serviceForecast"></output>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label>Status</label>
+                <output id="serviceStatus">EM ELABORAÇÃO</output>
+              </div>
+
+              <div class="button-row">
+                <button id="serviceAdd" type="button" class="btn btn-primary">Incluir solicitação</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="kicker">Observações</p>
+            <p>A tabela é preenchida com valores fictícios fixos nesta versão e os botões de exclusão já removem a linha atual.</p>
+            <p>Ao selecionar um serviço, os campos de preço, prazo e data prevista são atualizados automaticamente.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabela Serviços | Login de clientes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/cadastro.js"></script>
+  <script defer src="js/carrinho.js"></script>
+  <script defer src="js/main.js"></script>
+  <style>
+    .auth-card {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .auth-card h2 {
+      color: #1d4ed8;
+    }
+  </style>
+</head>
+<body data-page="login">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="branding">
+          <img class="logo" src="assets/logo.svg" alt="Logo da Mabela Serviços">
+          <div>
+            <h1>Login de clientes</h1>
+            <p class="slogan">Entre com seu e-mail e senha para acessar a área de conteúdo.</p>
+          </div>
+        </div>
+        <nav class="nav-links" aria-label="Navegação secundária">
+          <a href="index.html">Apresentação</a>
+          <a class="active" href="login.html">Login</a>
+          <a href="cadastro.html">Cadastro</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-inner">
+      <section class="card auth-card">
+        <h2>Autenticação do cliente</h2>
+        <p class="subtle">Use um e-mail válido. Após validação, a navegação seguirá para a página de apresentação.</p>
+
+        <form id="loginForm" class="form-grid" novalidate>
+          <div class="field-group">
+            <label for="loginEmail">Login (e-mail)</label>
+            <input type="email" id="loginEmail" name="loginEmail" autocomplete="email" placeholder="cliente@exemplo.com">
+          </div>
+
+          <div class="field-group">
+            <label for="loginPassword">Senha</label>
+            <input type="password" id="loginPassword" name="loginPassword" autocomplete="current-password" placeholder="Digite sua senha">
+          </div>
+
+          <p><a href="troca-senha.html">Trocar senha</a></p>
+          <p><a href="cadastro.html">Cadastrar novo cliente</a></p>
+
+          <div id="loginFeedback" class="form-feedback" aria-live="polite"></div>
+
+          <div class="button-row">
+            <button id="loginSubmit" type="button" class="btn btn-primary">Realizar Login</button>
+            <button id="loginClear" type="button" class="btn btn-secondary">Limpar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

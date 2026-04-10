@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabela Serviços | Troca de senha de clientes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/cadastro.js"></script>
+  <script defer src="js/carrinho.js"></script>
+  <script defer src="js/main.js"></script>
+  <style>
+    .password-card {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .password-card output {
+      background: #f8fbff;
+    }
+  </style>
+</head>
+<body data-page="password">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="branding">
+          <img class="logo" src="assets/logo.svg" alt="Logo da Mabela Serviços">
+          <div>
+            <h1>Troca de senha de clientes</h1>
+            <p class="slogan">Defina uma nova senha obedecendo às regras de composição.</p>
+          </div>
+        </div>
+        <nav class="nav-links" aria-label="Navegação secundária">
+          <a href="index.html">Apresentação</a>
+          <a href="login.html">Login</a>
+          <a href="cadastro.html">Cadastro</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-inner">
+      <section class="card password-card">
+        <h2>Atualização de credenciais</h2>
+        <p class="subtle">A senha precisa ter no mínimo 6 caracteres, um número, uma letra maiúscula e um caractere especial permitido.</p>
+
+        <form id="passwordForm" class="form-grid" novalidate>
+          <div class="field-group">
+            <label for="passwordEmail">Login (e-mail)</label>
+            <input type="email" id="passwordEmail" name="passwordEmail" autocomplete="email" placeholder="cliente@exemplo.com">
+          </div>
+
+          <div class="field-group">
+            <label for="passwordNew">Senha</label>
+            <input type="password" id="passwordNew" name="passwordNew" autocomplete="new-password" placeholder="Digite a nova senha">
+          </div>
+
+          <div class="field-group">
+            <label for="passwordConfirm">Confirmação de senha</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" autocomplete="new-password" placeholder="Repita a nova senha">
+          </div>
+
+          <div class="field-group">
+            <label for="passwordRules">Instruções da senha</label>
+            <output id="passwordRules" aria-live="polite"></output>
+          </div>
+
+          <div id="passwordFeedback" class="form-feedback" aria-live="polite"></div>
+
+          <div class="button-row">
+            <button id="passwordSubmit" type="button" class="btn btn-primary">Troca Senha</button>
+            <button id="passwordClear" type="button" class="btn btn-secondary">Limpar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

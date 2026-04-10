@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabela Serviços | Cadastro de clientes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/cadastro.js"></script>
+  <script defer src="js/carrinho.js"></script>
+  <script defer src="js/main.js"></script>
+  <style>
+    .register-card {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .register-card fieldset {
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+<body data-page="register">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="branding">
+          <img class="logo" src="assets/logo.svg" alt="Logo da Mabela Serviços">
+          <div>
+            <h1>Cadastro de clientes</h1>
+            <p class="slogan">Preencha os dados cadastrais e a regra de senha para liberar o acesso.</p>
+          </div>
+        </div>
+        <nav class="nav-links" aria-label="Navegação secundária">
+          <a href="index.html">Apresentação</a>
+          <a href="login.html">Login</a>
+          <a class="active" href="cadastro.html">Cadastro</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-inner">
+      <section class="card register-card">
+        <h2>Formulário de novo cliente</h2>
+        <p class="subtle">Os campos seguem as validações solicitadas e usam um padrão visual coerente com as demais páginas.</p>
+
+        <form id="registerForm" class="form-grid" novalidate>
+          <div class="two-col">
+            <div class="field-group">
+              <label for="registerEmail">E-mail / login</label>
+              <input type="email" id="registerEmail" name="registerEmail" autocomplete="email" placeholder="cliente@exemplo.com">
+            </div>
+            <div class="field-group">
+              <label for="registerName">Nome</label>
+              <input type="text" id="registerName" name="registerName" autocomplete="name" placeholder="Nome completo">
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="field-group">
+              <label for="registerPassword">Senha</label>
+              <input type="password" id="registerPassword" name="registerPassword" autocomplete="new-password" placeholder="Digite uma senha segura">
+            </div>
+            <div class="field-group">
+              <label for="registerConfirm">Confirmação de senha</label>
+              <input type="password" id="registerConfirm" name="registerConfirm" autocomplete="new-password" placeholder="Repita a senha">
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="registerRules">Instruções da senha</label>
+            <output id="registerRules" aria-live="polite"></output>
+          </div>
+
+          <div class="two-col">
+            <div class="field-group">
+              <label for="registerCPF">CPF</label>
+              <input type="text" id="registerCPF" name="registerCPF" inputmode="numeric" maxlength="14" placeholder="000.000.000-00">
+            </div>
+            <div class="field-group">
+              <label for="registerBirth">Data de nascimento</label>
+              <input type="date" id="registerBirth" name="registerBirth">
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="field-group">
+              <label for="registerPhone">Telefone celular / zap</label>
+              <input type="text" id="registerPhone" name="registerPhone" inputmode="tel" placeholder="(11) 98888-7777">
+              <p class="help-text">Campo opcional. Se preenchido, deve seguir o formato nacional.</p>
+            </div>
+            <div class="field-group">
+              <label for="registerEducation">Escolaridade</label>
+              <select id="registerEducation" name="registerEducation">
+                <option value="1incompleto">1º grau incompleto</option>
+                <option value="1completo">1º grau completo</option>
+                <option value="2completo" selected>2º grau completo</option>
+                <option value="superior">Nível superior</option>
+                <option value="pos">Pós-graduado</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="fieldset-box">
+            <legend>Estado civil</legend>
+            <div class="radio-row">
+              <label><input type="radio" name="maritalStatus" value="solteiro" checked> Solteiro(a)</label>
+              <label><input type="radio" name="maritalStatus" value="casado"> Casado(a)</label>
+              <label><input type="radio" name="maritalStatus" value="divorciado"> Divorciado(a)</label>
+              <label><input type="radio" name="maritalStatus" value="viuvo"> Viúvo(a)</label>
+            </div>
+          </fieldset>
+
+          <div id="registerFeedback" class="form-feedback" aria-live="polite"></div>
+
+          <div class="button-row">
+            <button id="registerSubmit" type="button" class="btn btn-primary">Incluir</button>
+            <button id="registerClear" type="button" class="btn btn-secondary">Limpar</button>
+            <button id="registerBack" type="button" class="btn btn-danger">Voltar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

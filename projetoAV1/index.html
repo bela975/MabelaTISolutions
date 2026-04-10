@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabela Serviços | Apresentação</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/cadastro.js"></script>
+  <script defer src="js/carrinho.js"></script>
+  <script defer src="js/main.js"></script>
+  <style>
+    .hero-panel h1 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+    }
+
+    .content-highlight {
+      color: #1e3a8a;
+      font-weight: 800;
+    }
+
+    .service-item:nth-child(2) {
+      background: linear-gradient(180deg, #eff6ff, #ffffff);
+    }
+  </style>
+</head>
+<body data-page="home">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="branding">
+          <img class="logo" src="assets/logo.svg" alt="Logo da Mabela Serviços">
+          <div>
+            <h1>Mabela Serviços de TI</h1>
+            <p class="slogan" data-home-note>Infraestrutura, suporte e segurança digital para empresas que precisam crescer com confiança.</p>
+          </div>
+        </div>
+
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a class="active" href="index.html">Apresentação</a>
+          <a href="login.html">Login</a>
+          <a href="cadastro.html">Cadastrar cliente</a>
+          <a href="carrinho.html" data-requires-login="true" hidden>Solicitar serviços</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-inner">
+      <section class="hero">
+        <article class="hero-panel">
+          <span class="badge">Empresa de TI com padrão visual integrado</span>
+          <h2>Transformamos demandas digitais em resultados práticos.</h2>
+          <p>Na Mabela, unimos atendimento consultivo, soluções sob medida e uma operação segura para apoiar clientes em toda a jornada tecnológica.</p>
+          <div class="quick-links">
+            <a class="btn btn-primary" href="login.html">Acessar login</a>
+            <a class="btn btn-secondary" href="cadastro.html">Novo cadastro</a>
+            <a class="btn btn-primary" href="carrinho.html" data-requires-login="true" hidden>Solicitar serviços</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="page-grid" style="margin-top: 1.25rem;">
+        <article class="card layout-stack">
+          <div>
+            <p class="kicker">História da empresa</p>
+            <h2>Uma trajetória focada em eficiência e proximidade</h2>
+            <p>A Mabela surgiu da união de duas profissionais apaixonadas por tecnologia e atendimento humanizado. Começamos como uma consultoria pequena, atendendo redes locais e suporte remoto para pequenas empresas. Com o tempo, ampliamos o portfólio para nuvem, cibersegurança, automação de processos e manutenção de ambientes corporativos, sempre com foco em qualidade, previsibilidade e comunicação clara.</p>
+            <p>Hoje, atuamos com projetos recorrentes e serviços sob demanda, mantendo <em>boas práticas de segurança</em> e organização, o que ajuda nossos clientes a reduzir custos e ganhar produtividade.</p>
+          </div>
+
+          <div>
+            <p class="kicker">Vídeo institucional</p>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/5qap5aO4i9A" title="Vídeo institucional da Mabela em streaming no YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="help-text">Vídeo em streaming hospedado no YouTube, com apresentação institucional da empresa.</p>
+          </div>
+
+          <div>
+            <p class="kicker">Galeria</p>
+            <div class="gallery-grid">
+              <figure class="photo-card">
+                <img src="assets/gallery-1.svg" alt="Equipe reunida em ambiente de escritório">
+                <figcaption>Reuniões curtas para alinhamento diário.</figcaption>
+              </figure>
+              <figure class="photo-card">
+                <img src="assets/gallery-2.svg" alt="Funcionária trabalhando em notebook">
+                <figcaption>Atendimento técnico e desenvolvimento.</figcaption>
+              </figure>
+              <figure class="photo-card">
+                <img src="assets/gallery-3.svg" alt="Instalação com equipamentos de tecnologia">
+                <figcaption>Ambiente estruturado e monitorado.</figcaption>
+              </figure>
+              <figure class="photo-card">
+                <img src="assets/gallery-4.svg" alt="Pessoas em brainstorming de projetos">
+                <figcaption>Planejamento colaborativo e foco em solução.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <aside class="card layout-stack">
+          <div>
+            <p class="kicker">Principais serviços de TI</p>
+            <div class="services-grid">
+              <div class="service-item">
+                <strong>Suporte remoto</strong>
+                <p>Atuação rápida para resolver incidentes, dúvidas e manutenções de rotina.</p>
+              </div>
+              <div class="service-item">
+                <strong>Infraestrutura em nuvem</strong>
+                <p>Implantação e acompanhamento de ambientes modernos, escaláveis e seguros.</p>
+              </div>
+              <div class="service-item">
+                <strong>Segurança da informação</strong>
+                <p>Mapeamento de riscos, auditorias e recomendações para proteção de dados.</p>
+              </div>
+              <div class="service-item">
+                <strong>Backup e continuidade</strong>
+                <p>Rotinas de cópia, recuperação e prevenção contra perda de informações.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="kicker">Fundadores</p>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Cargo</th>
+                    <th>Nome</th>
+                    <th>Breve CV</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CEO</td>
+                    <td>Maria Luisa</td>
+                    <td>Especialista em gestão de serviços, liderança de equipes e relacionamento com clientes.</td>
+                  </tr>
+                  <tr>
+                    <td>CTO</td>
+                    <td>Isabela Spinelli</td>
+                    <td>Arquiteto de soluções, automação, integração de sistemas e cloud computing.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <table class="footer-layout" aria-label="Rodapé da empresa">
+          <tr>
+            <td>
+              <div class="footer-block">
+                <h3>Contatos</h3>
+                <ul>
+                  <li>Telefone fixo: (11) 3210-4455</li>
+                  <li>WhatsApp: (11) 98888-7766</li>
+                  <li><a href="mailto:contato@nexati.com.br">contato@nexati.com.br</a></li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <div class="footer-block">
+                <h3>Endereço</h3>
+                <p>Av. Paulista, 1000, 10º andar, Bela Vista, São Paulo - SP, CEP 01310-100.</p>
+              </div>
+            </td>
+            <td>
+              <div class="footer-block">
+                <h3>Formas de pagamento</h3>
+                <div class="payment-icons" aria-label="Formas de pagamento aceitas">
+                  <img src="assets/visa.svg" alt="Visa">
+                  <img src="assets/mastercard.svg" alt="Mastercard">
+                  <img src="assets/paypal.svg" alt="PayPal">
+                  <img src="assets/pix.svg" alt="Pix">
+                </div>
+                <p class="small-note">Pagamentos por cartão, transferência e PIX.</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

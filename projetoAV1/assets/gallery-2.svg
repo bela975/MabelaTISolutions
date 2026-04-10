@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Funcionária trabalhando em notebook">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ecfeff"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#g2)"/>
+  <circle cx="250" cy="180" r="72" fill="#f8fafc"/>
+  <rect x="210" y="250" width="80" height="180" rx="34" fill="#0f172a" opacity="0.18"/>
+  <rect x="360" y="300" width="310" height="180" rx="20" fill="#1e293b" opacity="0.16"/>
+  <rect x="390" y="330" width="250" height="130" rx="12" fill="#ffffff" opacity="0.9"/>
+  <rect x="340" y="470" width="360" height="24" rx="12" fill="#0ea5e9" opacity="0.8"/>
+  <text x="50%" y="92%" text-anchor="middle" font-family="Segoe UI, Arial" font-size="34" fill="#0f172a" font-weight="700">Atendimento técnico focado</text>
+</svg>
