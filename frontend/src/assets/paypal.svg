@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-label="PayPal">
+  <rect width="160" height="96" rx="16" fill="#ffffff"/>
+  <path d="M54 24h26c12 0 20 8 20 18 0 12-10 24-28 24H60l-4 18H40zm18 28h6c7 0 12-4 12-10 0-5-4-8-10-8h-8z" fill="#003087"/>
+  <path d="M94 30h20c10 0 18 7 18 17 0 13-9 23-25 23h-8l-4 18H81zm14 26h5c6 0 11-4 11-10 0-4-3-7-9-7h-8z" fill="#009cde"/>
+</svg>
